@@ -9,7 +9,7 @@ const opts = {
       password: 'oauth:x641cmc676w7y8h01179r7veqjy6z8'
     },
     channels: [
-      'jayemochi'
+      'tempo'
     ]
 };
 function onConnectedHandler (addr, port) {
@@ -31,8 +31,7 @@ function onMessageHandler (target, context, msg, self) {
         elem.innerHTML = elem.innerHTML + '<br />' + message
     }
     else{
-        const commandName = msg.trim();
-        var value = commandName
+        var value = msg.trim();
         var message = "message recieved from -- unknown sender: " + value
         var elem = document.querySelector('#output');
         elem.innerHTML = elem.innerHTML + '<br />' + message

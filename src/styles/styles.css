@@ -1,0 +1,13 @@
+body{
+    background-color: #2036ff;
+    color: white;
+}
+.podium-box{
+    border: 5px solid white
+}
+#output{
+    max-height: 80px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
