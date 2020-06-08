@@ -11,3 +11,27 @@ body{
     display: flex;
     flex-direction: column-reverse;
 }
+#output::-webkit-scrollbar {
+    display: none;
+}
+#title{
+    display: inline;
+}
+#input1{
+    border: none;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    background: inherit;
+    color: inherit;
+    width:12ch;
+}
+.p1button{
+    display: inline;
+}
+#p1image{
+    display: none;
+    -webkit-app-region: no-drag;
+    width: 2rem;
+}

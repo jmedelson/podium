@@ -57,6 +57,20 @@ function myFunction(){
     var message = "displaying messages from username: " + value
     var elem = document.querySelector('#output');
     elem.innerHTML = elem.innerHTML + '<br />' + message
-    var title = document.querySelector('#title');
-    title.innerHTML = "Displaying messages from --" + value
+    // var title = document.querySelector('#title');
+    // title.innerHTML = "Displaying messages from --" + value
 }
+$("#input1").keydown(function() {
+    var text = $("#input1").val()
+    var size = text.length + 2 +"ch"
+    $("#input1").width(size)
+})
+$("#input1").click(function() {
+    $("#p1image").show()
+    console.log("input")
+})
+$("#p1image").click(function() {
+    $("#p1image").hide()
+    $("#input1").blur()
+    console.log("image")
+})

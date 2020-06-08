@@ -3,16 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>NW.js-example | main</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Materialize CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">    
 </head>
 <body style="-webkit-app-region: drag">
     <div class="podium-box">
-        <h1 id="title">Hello World!<img src="https://static-cdn.jtvnw.net/emoticons/v1/301146408/1.0"></h1>
+        <h1 id="title">Podium #1: 
+            <input type="text" id="input1" value="Placeholder" style="-webkit-app-region: no-drag">
+            <img src="..\assets\tempo-logo-ICON-WHITE.png" alt="" id="p1image">
+        </h1>
         <p id="output"></p>
         <label for="fname">Twitch name:</label>
         <input type="text" id="fname" name="fname" style="-webkit-app-region: no-drag"><br>
         <button onclick="myFunction()" style="-webkit-app-region: no-drag">Click</button>
     </div>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- My JS -->
     <script src="../app/main.js"></script>
 </body>
 </html>
