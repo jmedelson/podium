@@ -1,9 +1,0 @@
-{
-    "name": "podium",
-    "main": "views/main.html",
-    "window": {
-        "frame": false,
-        "transparent": true,
-        "icon":"assets/icon.png"
-    }
-}
