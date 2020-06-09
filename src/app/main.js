@@ -2,6 +2,7 @@ const tmi = require('tmi.js');
 var nw = require('nw.gui')
 
 var check = ""
+var viewerTargets = ['','','','','']
 console.log("starting")
 const opts = {
     identity: {
@@ -65,12 +66,24 @@ $("#input1").keydown(function() {
     var size = text.length + 2 +"ch"
     $("#input1").width(size)
 })
-$("#input1").click(function() {
-    $("#p1image").show()
+$(".podiumInput").click(function(event) {
+    var select = event.target
+    console.log(select.id)
+    var target = select.id.slice(-1)
+    target = "#podiumImage" + target
+    $(target).show()
     console.log("input")
 })
-$("#p1image").click(function() {
-    $("#p1image").hide()
-    $("#input1").blur()
+$(".podiumImage").click(function(event) {
+    var select = event.target
+    console.log(select.id)
+    var target = select.id.slice(-1)
+    var image = '#podiumImage' + target
+    var input = '#input' + target
+    var name = $(input).val()
+    viewerTargets[target] = name
+    console.log("viewerTargets", viewerTargets)
+    $(image).hide()
+    $(input).blur()
     console.log("image")
 })
