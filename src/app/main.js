@@ -10,7 +10,7 @@ const opts = {
       password: 'oauth:x641cmc676w7y8h01179r7veqjy6z8'
     },
     channels: [
-      'tempo'
+      'trihex'
     ]
 };
 function onConnectedHandler (addr, port) {
