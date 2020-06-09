@@ -2,7 +2,6 @@ const tmi = require('tmi.js');
 var nw = require('nw.gui')
 
 var check = ""
-var mode = 1
 console.log("starting")
 const opts = {
     identity: {

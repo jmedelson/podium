@@ -1,11 +1,13 @@
 body{
     background-color: #2036ff;
     color: white;
+    height:100%;
+    margin: 0;
+    padding: 0;
 }
 .podium-box{
     border: 5px solid white;
-    height: 95vh;
-    width: 96vw;
+    height: 40vh;
     box-sizing: border-box;
     padding: 15px;
     margin: auto;
@@ -19,10 +21,10 @@ body{
 #output::-webkit-scrollbar {
     display: none;
 }
-#title{
+.title{
     display: inline;
 }
-#input1{
+.podiumInput{
     border: none;
     display: inline;
     font-family: inherit;
@@ -35,7 +37,7 @@ body{
 .p1button{
     display: inline;
 }
-#p1image{
+.podiumImage{
     display: none;
     -webkit-app-region: no-drag;
     width: 2rem;
@@ -48,4 +50,12 @@ body{
 .icon{
     width:25px;
     height: 25px;
+}
+.p-row{
+    margin: 0 3vw;
+}
+.spacer{
+    width: 100%;
+    height: 7vh;
+    display: block;
 }
