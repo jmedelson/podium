@@ -54,7 +54,7 @@ function myFunction(){
     // var title = document.querySelector('#title');
     // title.innerHTML = "Displaying messages from --" + value
 }
-$(".podiumImage").keydown(function(event) {
+$(".podiumInput").keyup(function(event) {
     var select = event.target
     console.log(select.id)
     var target = select.id.slice(-1)
