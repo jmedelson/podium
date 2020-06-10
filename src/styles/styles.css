@@ -12,6 +12,30 @@ body{
     padding: 15px;
     margin: auto;
     position: relative;
+    transition: transform 2s, opacity 1s;
+    -webkit-app-region: no-drag;
+}
+.pb-scale{
+    transform: scale(2.19, 2.19);
+    z-index: 9999999;
+}
+.no-show{
+    opacity: 0;
+}
+/* 
+*       podium box transition direction  
+*/
+#pb1{
+    transform-origin: left top;
+}
+#pb2{
+    transform-origin: right top;
+}
+#pb3{
+    transform-origin: left bottom;
+}
+#pb4{
+    transform-origin: right bottom;
 }
 .output{
     max-height: calc(100% - 50px);
@@ -65,6 +89,16 @@ body{
     position: absolute;
     top:15px;
     right: 15px;
+    -webkit-app-region: no-drag;
+}
+.collapse-icon{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top:15px;
+    right: 15px;
+    display: none;
+    -webkit-app-region: no-drag;
 }
 /*
  *  scroll bar style

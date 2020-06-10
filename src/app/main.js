@@ -83,4 +83,40 @@ $(".podiumImage").click(function(event) {
     $(image).hide()
     $(input).blur()
     console.log("image")
-})
+});
+
+$('.expand-icon').click(function(event) {
+    var select = event.target
+    var target = select.id.slice(-1)
+    var i = 1
+    while(i<5){
+        var elem = '#pb' + i
+        console.log("test", i, i!=target, elem)
+        if(i!=target){
+            $(elem).addClass('no-show')
+        }else{
+            $(elem).addClass('pb-scale')
+        }
+        i++
+    }
+    $('.expand-icon').hide()
+    $('.collapse-icon').show()
+});
+$('.collapse-icon').click(function(event) {
+    collapse()
+});
+$(document).keyup(function(e) {
+    if (e.key === "Escape") { // escape key maps to keycode `27`
+        collapse()
+    }
+});
+function collapse(){
+    var i = 1
+    while(i<5){
+        var elem = '#pb' + i
+        $(elem).removeClass('no-show pb-scale')
+        i++
+    }
+    $('.expand-icon').show()
+    $('.collapse-icon').hide()
+}
